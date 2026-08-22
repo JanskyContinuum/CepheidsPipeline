@@ -38,25 +38,20 @@ The pipeline generates analytical plots and CSV datasets, automatically saved in
 ### 1. Phase-Folded Light Curves
 The single-star analysis collapses years of chaotic, irregularly sampled observations into a clean, normalized pulsation phase [0.0, 2.0], revealing the true physical waveform (e.g., the characteristic asymmetrical "shark fin" of fundamental mode Cepheids).
 
-<figure style="text-align:center;">
-  <img src="results/examples/OGLE-LMC-CEP-0001_analysis.png"
-       alt="Light Curve of OGLE-LMC-CEP-0001"
-       width="650">
-  <figcaption>
-    <em>Light Curve of OGLE-LMC-CEP-0001</em>
-  </figcaption>
-</figure>
+<p align="center">
+  <img src="results/examples/OGLE-LMC-CEP-0001_analysis.png" alt="Light Curve of OGLE-LMC-CEP-0001" width="650">
+  <br>
+  <em>Light Curve of OGLE-LMC-CEP-0001</em>
+</p>
 
 ### 2. The Period-Luminosity Relation & Pulsation Modes
 When running the batch analysis (build_pl_relation.py), the pipeline outputs a scatter plot of $\log_{10}(P)$ vs. Mean Magnitude.
-<figure style="text-align:center;">
-  <img src="results/examples/pl_relation_fit.png"
-       alt="Period-Luminosity relation (Leavitt Law) for LMC Cepheids showing Fundamental Mode and First Overtone bands"
-       width="650">
-  <figcaption>
-    <em>Period-Luminosity relation (Leavitt Law) for a sample of LMC Cepheids. The linear regression fit is shown in red. </em>
-  </figcaption>
-</figure>
+
+<p align="center">
+  <img src="results/examples/pl_relation_fit.png" alt="Period-Luminosity relation (Leavitt Law) for LMC Cepheids showing Fundamental Mode and First Overtone bands" width="650">
+  <br>
+  <em>Period-Luminosity relation (Leavitt Law) for a sample of LMC Cepheids. The linear regression fit is shown in red. </em>
+ </p>
 
 The resulting regression plot clearly demonstrates two distinct, parallel bands of stars. This is not a data error, but a physical reality successfully captured by the pipeline.
 The Lower Band (Fainter): Stars pulsating in the Fundamental Mode.
