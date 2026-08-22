@@ -1,0 +1,89 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs
+
+.idea/
+.vscode/
+*.iml
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Python packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing / coverage
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs
+
+*.log
+
+# OS generated files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local configuration
+
+.env
+.env.*
+
+# Local data files
+
+data/*.dat
+data/*.txt
+data/*.csv
+data/*.zip
+
+# Generated results
+
+results/lightcurves/*.png
+results/pl_relation/*.png
+results/pl_relation/*.csv
+
+
+# Generated CSV results
+
+results/**/*.csv
+
+# Temporary files
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Local Python tooling
+
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# Project-specific temporary files
+
+scratch/
+tmp/
