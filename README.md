@@ -35,6 +35,8 @@ To process a large sample of Cepheids and generate the Leavitt Law regression:
 ```bash
 python scripts/build_pl_relation.py
 ```
+(This analyzes the first 100 Cepheids from the OGLE-IV LMC catalog using I-band photometry. It automatically calculates their primary periods and intensity-mean magnitudes to construct the empirical relation.)
+
 ## Results & Interpretation
 The pipeline generates analytical plots and CSV datasets, automatically saved in the results/ directory. You can view sample outputs in the results/examples/ folder.
 
