@@ -24,7 +24,10 @@ pip install numpy astropy scipy pandas matplotlib
 ```
 
 ### 2. Single Star Analysis
-To run the pipeline for a single star and generate a diagnostic multi-panel plot (raw data, periodogram, and phase-folded light curve):Bashpython scripts/analyze_cepheid.py 1
+To run the pipeline for a single star and generate a diagnostic multi-panel plot (raw data, periodogram, and phase-folded light curve):
+```bash
+python scripts/analyze_cepheid.py 1
+```
 (This analyzes OGLE-LMC-CEP-0001. You can replace 1 with any catalog number).
 
 ### 3. Batch Processing (Period-Luminosity Relation)
