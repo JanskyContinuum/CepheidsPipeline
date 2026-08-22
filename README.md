@@ -18,7 +18,7 @@ The pipeline fetches raw I-band photometry of Cepheids in the Large Magellanic C
 ### 1. Installation
 Clone the repository and install the required dependencies:
 ```bash
-git clone [https://github.com/JanskyContinuum/CepheidsPipeline.git](https://github.com/JanskyContinuum/CepheidsPipeline.git)
+git clone https://github.com/JanskyContinuum/CepheidsPipeline.git
 cd CepheidsPipeline
 pip install numpy astropy scipy pandas matplotlib
 ```
