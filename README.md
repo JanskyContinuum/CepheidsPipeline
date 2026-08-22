@@ -20,7 +20,7 @@ Clone the repository and install the required dependencies:
 ```bash
 git clone [https://github.com/JanskyContinuum/CepheidsPipeline.git](https://github.com/JanskyContinuum/CepheidsPipeline.git)
 cd CepheidsPipeline
-pip install -r requirements.txt
+pip install numpy astropy scipy pandas matplotlib
 ```
 
 ### 2. Single Star Analysis
@@ -48,7 +48,7 @@ The single-star analysis collapses years of chaotic, irregularly sampled observa
 </figure>
 
 ### 2. The Period-Luminosity Relation & Pulsation Modes
-When running the batch analysis (build_pl_relation.py), the pipeline outputs a scatter plot of $ \log_{10}(P) $ vs. Mean Magnitude.
+When running the batch analysis (build_pl_relation.py), the pipeline outputs a scatter plot of $\log_{10}(P)$ vs. Mean Magnitude.
 <figure style="text-align:center;">
   <img src="results/examples/pl_relation_fit.png"
        alt="Period-Luminosity relation (Leavitt Law) for LMC Cepheids showing Fundamental Mode and First Overtone bands"
