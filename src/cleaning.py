@@ -27,6 +27,6 @@ def ingest_and_clean(filepath):
     df_clean['weight'] = 1.0 / (df_clean['err'] ** 2)
 
     rejected = original_point_count - len(df_clean)
-    print(f"Phase A completed. Rejected {rejected} outlier points out of {original_point_count}.")
+    print(f"Rejected {rejected} outlier points out of {original_point_count}.")
 
     return df_clean
