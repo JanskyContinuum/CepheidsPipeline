@@ -33,7 +33,7 @@ To process a sample of Cepheids in V and I bands, calculate Wesenheit indices, a
 python scripts/build_pl_relation.py
 ```
 
-## 📈 Results & Interpretation
+## Results & Interpretation
 The pipeline generates analytical plots and CSV datasets, automatically saved in the results/ directory. You can view sample outputs in the results/examples/ folder.
 
 ### 1. Phase-Folded Light Curves
