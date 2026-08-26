@@ -5,7 +5,7 @@ An automated, modular Python pipeline for processing astronomical time-series da
 ## Data Source: The OGLE Survey
 The pipeline fetches raw photometry of Cepheids in the Large Magellanic Cloud (LMC) sourced from the **Optical Gravitational Lensing Experiment (OGLE-IV)**, operated by the University of Warsaw.
 
-## ✨ Key Features & Physics
+## Key Features & Physics
 * **Automated Data Ingestion:** Dynamically downloads raw `.dat` light curves from OGLE servers.
 * **Robust Noise Reduction:** Applies iterative sigma-clipping to remove atmospheric and instrumental outliers.
 * **Lomb-Scargle Periodogram:** Utilizes `astropy` to extract the primary pulsation frequency from unevenly sampled astronomical data, accurately bypassing daily observation aliases.
