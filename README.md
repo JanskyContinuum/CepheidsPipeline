@@ -5,20 +5,11 @@ An automated, modular Python pipeline for processing astronomical time-series da
 ## Data Source: The OGLE Survey
 The pipeline fetches raw photometry of Cepheids in the Large Magellanic Cloud (LMC) sourced from the **Optical Gravitational Lensing Experiment (OGLE-IV)**, operated by the University of Warsaw.
 
-## Astronomical Physics & The P-L Relation
-
-When analyzing Period-Luminosity relations, different photometric bands exhibit different levels of scatter around the regression line:
-
-### 1. Intrinsic Scatter and Passbands
-The scatter in the optical P-L relation (such as in the V and I bands) is not strictly instrumental error. It arises primarily from the finite temperature width of the Cepheid **Instability Strip** on the Hertzsprung-Russell diagram. A Cepheid of a given pulsation period can have a slightly different temperature (and thus color), changing its absolute magnitude. The V-band is highly sensitive to temperature changes, leading to significant intrinsic scatter. The I-band is further to the red and is therefore less affected by this temperature width, reducing the intrinsic scatter.
-
-### 2. Extinction and Near-Infrared (NIR)
-Interstellar dust absorbs and scatters shorter wavelengths of light more efficiently than longer ones (extinction). This physically dims and reddens starlight. Because $A_\lambda \propto \lambda^{-1.6}$, Near-Infrared (NIR) passbands (like J, H, K) are vastly less susceptible to interstellar extinction compared to optical bands. In future implementations, adding J/H/K bands to this pipeline will yield extremely tight P-L relations.
-
-### 3. The Wesenheit Index
-To bypass the problem of unknown interstellar extinction in optical bands, astronomers use the **Wesenheit Index ($W$)**. It is defined as a linear combination of a magnitude and a color index, utilizing a fixed standard extinction law (e.g., $R_I = 1.55$ for LMC $V, I$ data). 
-Formula: $W_I = I - R_I \times (V - I)$
-By definition, the Wesenheit function is an extinction-free pseudo-magnitude. When plotted against $\log(P)$, it naturally removes interstellar reddening and strongly mitigates the Instability Strip temperature width effect, resulting in a dramatically reduced scatter in the $W_I$ P-L relation.
+## ✨ Key Features & Physics
+* **Automated Data Ingestion:** Dynamically downloads raw `.dat` light curves from OGLE servers.
+* **Robust Noise Reduction:** Applies iterative sigma-clipping to remove atmospheric and instrumental outliers.
+* **Lomb-Scargle Periodogram:** Utilizes `astropy` to extract the primary pulsation frequency from unevenly sampled astronomical data, accurately bypassing daily observation aliases.
+* **Batch Population Analysis:** Processes hundreds of stars sequentially to map population-level astrophysical relations.
 
 ## Quick Start
 
